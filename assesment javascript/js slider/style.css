@@ -1,0 +1,60 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.slider-container
+{
+width:80%;
+position: relative;
+overflow: hidden; 
+margin: auto !important;
+padding-top: 15px !important; 
+
+}
+.slider{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+   
+    
+}
+.slide 
+{
+
+    height: 550px;
+    flex: 0 0 100% !important;
+    background-size:cover;
+   
+    background-position: center;
+ 
+    
+}
+
+.slide .active 
+{
+    transform: translateX(0);
+}
+.slider-controls
+{
+    position: absolute;
+    margin: 5px;
+    bottom: 50%;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%) !important;
+    justify-content: space-between;
+    width: 100%;
+}
+.prevBtn,
+.nextBtn 
+{
+    margin: 4px 8px;
+    width: 80px;
+    height: auto;
+    padding: 10px;
+    background-color:white;
+    border-radius: 50% !important;
+    border: none;
+    color:black;
+}
