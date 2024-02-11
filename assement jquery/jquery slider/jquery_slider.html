@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <!--called of cycle.min.js  plugins for slider -->
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <!--slider implement via the jquery-->
+    <script>
+        $(document).ready(function(){
+            $("#slide").cycle("fade,zoom");
+        })
+    </script>
+</head>
+<body>
+    <section id="slider">
+        <div id="slide">
+            <img src="images/1.jpg" alt="">
+          <img src="images/2.jpg" alt="">
+          <img src="images/3.jpg" alt="">
+          <img src="images/4.jpg" alt="">
+        </div>
+    </section>
+</body>
+</html>
